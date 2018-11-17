@@ -1,0 +1,23 @@
+{
+  "name": "mongodb-playlist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/master83/mongodb-playlist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/master83/mongodb-playlist/issues"
+  },
+  "homepage": "https://github.com/master83/mongodb-playlist#readme",
+  "dependencies": {
+    "mongoose": "^5.3.12"
+  }
+}
