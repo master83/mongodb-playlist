@@ -9,7 +9,8 @@ describe('Updating records', () => {
 
     beforeEach((done) => {
         char = new MarioChar({
-            name: 'Mario'
+            name: 'Mario',
+            weight: 50
         });
 
         char.save().then(() => {
@@ -27,5 +28,16 @@ describe('Updating records', () => {
             });
         })
 
-    })
+    });
+
+    it('Increment the weight by 1', (done) => {
+
+        MarioChar.update({}, { $inc: {weight: 1} }).then(() => {
+            MarioChar.findOne({ name: 'Mario' }).then((result) => {
+                assert(result.weight === 51);
+                done();
+            });
+        })
+
+    });
 });
