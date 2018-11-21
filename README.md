@@ -1,1 +1,3 @@
-# mongodb-playlist
+# Learning MongoDB
+
+Step by Step
